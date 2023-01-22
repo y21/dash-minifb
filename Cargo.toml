@@ -1,0 +1,18 @@
+[package]
+name = "dash-minifb"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dash_rt = { git = "https://github.com/y21/dash" }
+dash_vm = { git = "https://github.com/y21/dash" }
+dash_middle = { git = "https://github.com/y21/dash" }
+dash_dlloader = { git = "https://github.com/y21/dash" }
+dash_proc_macro = { git = "https://github.com/y21/dash" }
+minifb = "0.23.0"
+bytemuck = "1.13.0"
